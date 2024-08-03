@@ -1,0 +1,169 @@
+.main-contacto
+    display: flex
+    flex-wrap: wrap
+    padding: 16px
+
+.section-contacto
+    display: flex
+    flex-direction: row
+    width: 100%
+
+.article-contacto
+    display: flex
+    width: 100%
+    padding: 16px
+
+.contenido-izquierdo-contacto, .contenido-derecho-contacto
+    flex: 1
+    padding: 16px
+
+.contenido-izquierdo-contacto
+    max-width: 50%
+
+.titulo-contacto
+    margin: 16px 0
+    padding-left: 16px
+    font-size: 2em // Doble del tamaño original del h1
+
+.descripcion-contacto
+    margin: 16px 0
+    padding-left: 16px
+    font-size: 1.2em // Tamaño de fuente consistente con otras secciones
+
+.formulario-contacto
+    padding-left: 16px
+
+    .formulario-contacto-form
+        display: flex
+        flex-direction: column
+
+        .input-email,
+        .input-nombre,
+        .input-mensaje
+            margin-bottom: 1rem
+            padding: 8px
+            font-size: 1em
+            width: 100%
+
+        .input-mensaje
+            height: 120px // Ajustar altura para el textarea
+
+        .boton-enviar
+            width: 100px
+            padding: 8px
+            font-size: 1em
+            cursor: pointer
+
+.contenido-derecho-contacto
+    max-width: calc(50% - 32px)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.redes-sociales-contacto
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+
+    .lista-iconos-redes
+        list-style: none
+        padding: 0
+        margin: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+
+        li
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 16px
+            width: 100%
+            max-width: 300px // Ajusta el ancho máximo según sea necesario
+
+            a
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 64px // Tamaño estándar para iconos de redes sociales
+                height: 64px
+
+            .icono
+                width: 48px // Tamaño del icono
+                height: 48px
+
+            img
+                border-radius: 8px
+                max-width: 100%
+                height: auto
+
+            // Estilo específico para los banners
+            img:not(.icono)
+                width: 100% // Ajustar al 100% del ancho del contenedor
+                height: auto
+                margin-top: 8px
+
+@media (max-width: 768px)
+    .main-contacto
+        padding: 0 // Elimina el padding alrededor del contenedor principal para aprovechar todo el ancho de la pantalla
+
+    .section-contacto
+        flex-direction: column
+        padding: 0 // Elimina el padding en la sección de contacto
+
+    .article-contacto
+        flex-direction: column
+        align-items: center
+        padding: 0 // Elimina el padding en el artículo de contacto
+
+    .contenido-izquierdo-contacto
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 // Elimina el padding dentro del contenido izquierdo
+
+    .titulo-contacto
+        width: 100%
+        text-align: center
+        font-size: 1.8em // Ajusta el tamaño del título
+        margin: 0 // Elimina el margen para usar todo el ancho disponible
+
+    .descripcion-contacto
+        width: 100%
+        text-align: center
+        font-size: 1.2em // Ajusta el tamaño de la descripción
+        margin: 0 // Elimina el margen para usar todo el ancho disponible
+
+    .formulario-contacto
+        width: 100%
+        padding: 0 // Elimina el padding alrededor del formulario
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .formulario-contacto-form
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 // Elimina el padding en el formulario
+
+        .input-email,
+        .input-nombre,
+        .input-mensaje
+            margin-bottom: 0.5rem // Reduce el margen entre los campos
+            padding: 8px // Mantiene el padding en los campos
+            font-size: 1em // Mantiene el tamaño de la fuente en los campos
+            width: 100% // Asegura que los campos usen todo el ancho disponible
+
+        .input-mensaje
+            height: 120px // Mantiene la altura del área de texto
+
+        .boton-enviar
+            width: 100% // Asegura que el botón use todo el ancho disponible
+            padding: 8px // Mantiene el padding dentro del botón
+            font-size: 1em // Mantiene el tamaño de la fuente en el botón
+            cursor: pointer

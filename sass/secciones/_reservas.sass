@@ -1,0 +1,93 @@
+.reservas-container
+    display: flex
+    flex-wrap: wrap
+    padding: 16px
+
+.reservas-section
+    width: 100%
+
+.reservas-article
+    display: flex
+    flex-direction: column
+    width: 100%
+
+.reservas-title
+    margin: 16px 0
+    padding-left: 16px
+    font-size: 2em // Mantener el doble del tamaño original del h1
+    position: relative // Asegurar el posicionamiento consistente
+
+.reservas-content
+    display: flex
+    flex-direction: row
+    width: 100%
+
+.reservas-left, .reservas-right
+    flex: 1
+    padding: 16px
+
+.reservas-info, .reservas-directions
+    font-size: 1.2em // Asegurar el mismo tamaño de fuente en todo el bloque
+
+.reservas-form-container
+    margin-top: 16px
+
+    .reservas-form-list
+        list-style: none
+        padding: 0
+
+        li
+            margin-bottom: 8px
+
+            input[type="text"],
+            input[type="datetime-local"],
+            input[type="number"],
+            textarea
+                width: 100%
+                padding: 8px
+                font-size: 1.2em
+
+            input[type="button"]
+                padding: 10px 20px
+                font-size: 1.2em
+                cursor: pointer
+
+.reservas-map
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 16px
+
+    img
+        max-width: 100%
+        height: auto
+
+@media (max-width: 768px)
+    .reservas-container
+        padding: 8px
+
+    .reservas-content
+        flex-direction: column
+
+    .reservas-left, .reservas-right
+        padding: 8px
+        width: 100%
+
+    .reservas-title, .reservas-info, .reservas-directions
+        margin: 8px 0
+        padding-left: 8px
+        width: 100%
+
+    .reservas-form-container
+        .reservas-form-list
+            li
+                margin-bottom: 4px
+
+                input[type="text"],
+                input[type="datetime-local"],
+                input[type="number"],
+                textarea
+                    font-size: 1em
+
+                input[type="button"]
+                    font-size: 1em
